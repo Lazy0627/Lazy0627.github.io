@@ -661,10 +661,11 @@ function toggleMusic() {
   }
   musicPlaying = !musicPlaying;
 }
-</script>
  document.querySelectorAll('.dialog, .msg-row').forEach((el, i) => {
-  el.style.animationDelay = (i * 1.0) + 's';
+  el.style.animationDelay = (i * 0.7) + 's';
 });
+</script>
+ 
 </div>
   <div class="music-btn" id="music-btn" onclick="toggleMusic()">💭</div>
 <audio id="bgm" loop>
